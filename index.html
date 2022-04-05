@@ -50,6 +50,8 @@
 						</nav>
 					</header>
 
+					<a href="#Thanks" hidden></a>
+
 				<!-- Main -->
 					<div id="main">
 
@@ -106,6 +108,14 @@
 								<!-- <span class="image main"><img src="images/beach_kiss.jpg" alt="" /></span> -->
 							</article>
 
+						<!-- Thanks -->
+						<article id="Thanks">
+							<h2 class="major">Thank You</h2>
+							<!-- <span class="image main"><img src="images/sunny2.png" alt="" /></span> -->
+							<p>See you soon!     
+							</p>
+							<!-- <span class="image main"><img src="images/beach_kiss.jpg" alt="" /></span> -->
+						</article>
 
 						<!-- RSVP -->
 							<article id="RSVP">
@@ -116,41 +126,166 @@
 								<div class="container">
 									<div class="row">
 									  <div class="col-md-6 mx-auto mt-5">
-										<h1 class="p-5">Test form submission</h1>
-										<form action="https://formspree.io/lososian@gmail.com" method="POST">
-											<input type="hidden" name="_subject" value="Special Form">                 
-											<!-- <input type="hidden" name="_next" value="/thanks.html" > -->
-										  <div class="form-group">
-											<label>Name:</label>
-											<input type="text" class="form-control" id="name" placeholder="Name">
-											<div class="invalid-feedback">
-											  Name must be between 2 and 20 characters
-											</div>
-										  </div>
-								
-										  <div class="form-group">
-											<label>Email:</label>
-											<input type="text" class="form-control" id="email" placeholder="Email address">
-											<div class="invalid-feedback">
-											  Enter a valid email address
-											</div>
-										  </div>
-								
-										  <div class="form-group">
-											<label>Telephone:</label>
-											<input type="text" class="form-control" id="phone" placeholder="Phone number">
-											<div class="invalid-feedback">
-											  Enter a valid number
-											</div>
-										  </div>
-										  <input type="submit" value="Submit" class="btn btn-info btn-block">
-										</form>
+										<!-- <h1 class="p-5">répondez s'il vous plaît</h1> -->
+										<img src="images/flower.png" alt="" style="max-width: 30%;"/>
+
+										<form id="fs-frm" name="basic-rsvp-form" accept-charset="utf-8" action="https://api.web3forms.com/submit" method="post">
+											<!-- <fieldset id="fs-frm-inputs"> -->
+											<!-- <span class="image main"><img src="images/flower.png" alt="" style="max-width: 50%;"/></span> -->
+											  <!-- <label for="attending">Attending?</label> -->
+											  <input type="hidden" name="access_key" value="72048042-6aeb-4476-b9d0-6b705d6feade">
+
+											  <select name="attending" id="attending" required="">
+												<option value="" selected disabled hidden>Attending?</option>
+												<option value="Yes">Yes, gladly accept</option>
+												<option value="No">No, regretfully decline</option>
+											  </select>
+											  <hr size="2" width="100%">  
+
+
+											  <input type="text" name="name" id="full-name" placeholder="Guest 1 Name" required="">
+											  <br/>
+											  <input type="checkbox" name="friday" id="friday-attendance"><label for="friday-attendance">Friday | Welcome Reception</label>
+											  <input type="checkbox" name="saturday" id="saturday-attendance"><label for="saturday-attendance">Saturday | Wedding</label>
+											  <input type="checkbox" name="sunday" id="sunday-attendance"><label for="sunday-attendance">Sunday | Farewell Brunch</label>
+											  <br/>
+											  <br/>
+											  <select name="meal" id="meal">
+												  <option value="" selected disabled hidden>Dinner selection</option>
+												  <option value="Beef">Beef</option>
+												  <option value="Salmon">Salmon</option>
+												  <option value="Vegetarian">Vegetarian</option>
+												  <option value="Children's meal">Children's meal</option>
+											  </select>
+											  <input type="checkbox" placeholder="chk" id="Foodrequestchk" name="Foodrequestchk"/><label for="Foodrequestchk">Food request</label> 
+											  <input type="text" name="Foodrequests" id="Foodrequests" placeholder="Food requests (allergy, restriction, etc.)">  
+											  <br/>
+											  <hr size="2" width="100%">  
+
+											  <input type="text" name="name2" id="full-name2" placeholder="Guest 2 Name">
+											  <br/>
+											  <input type="checkbox" name="friday2" id="friday-attendance2"><label for="friday-attendance2">Friday | Welcome Reception</label>
+											  <input type="checkbox" name="saturday2" id="saturday-attendance2"><label for="saturday-attendance2">Saturday | Wedding</label>
+											  <input type="checkbox" name="sunday2" id="sunday-attendance2"><label for="sunday-attendance2">Sunday | Farewell Brunch</label>
+											  <br/>
+											  <br/>
+											  <select name="meal2" id="meal2">
+												<option value="" selected disabled hidden>Dinner selection</option>
+												<option value="Beef">Beef</option>
+												<option value="Salmon">Salmon</option>
+												<option value="Vegetarian">Vegetarian</option>
+												<option value="Children's meal">Children's meal</option>
+											  </select>
+											  <input type="checkbox" placeholder="chk" id="Foodrequestchk2" name="Foodrequestchk2"/><label for="Foodrequestchk2">Food request</label> 
+											  <input type="text" name="Foodrequests2" id="Foodrequests2" placeholder="Food requests (allergy, restriction, etc.)">  <br/>
+											  <hr size="2" width="100%">  
+
+											  <input type="text" name="name3" id="full-name3" placeholder="Guest 3 Name">
+											  <br/>
+											  <input type="checkbox" name="friday3" id="friday-attendance3"><label for="friday-attendance3">Friday | Welcome Reception</label>
+											  <input type="checkbox" name="saturday3" id="saturday-attendance3"><label for="saturday-attendance3">Saturday | Wedding</label>
+											  <input type="checkbox" name="sunday3" id="sunday-attendance3"><label for="sunday-attendance3">Sunday | Farewell Brunch</label>
+											  <br/>
+											  <br/>
+											  <select name="meal3" id="meal3">
+												<option value="" selected disabled hidden>Dinner selection</option>
+												<option value="Beef">Beef</option>
+												<option value="Salmon">Salmon</option>
+												<option value="Vegetarian">Vegetarian</option>
+												<option value="Children's meal">Children's meal</option>
+											  </select>
+											  <input type="checkbox" placeholder="chk" id="Foodrequestchk3" name="Foodrequestchk3"/><label for="Foodrequestchk3">Food request</label> 
+											  <input type="text" name="Foodrequests3" id="Foodrequests3" placeholder="Food requests (allergy, restriction, etc.)">  <br/>
+											  <hr size="2" width="100%">  
+
+											  <input type="text" name="name4" id="full-name4" placeholder="Guest 4 Name">
+											  <br/>
+											  <input type="checkbox" name="friday4" id="friday-attendance4"><label for="friday-attendance4">Friday | Welcome Reception</label>
+											  <input type="checkbox" name="saturday4" id="saturday-attendance4"><label for="saturday-attendance4">Saturday | Wedding</label>
+											  <input type="checkbox" name="sunday4" id="sunday-attendance4"><label for="sunday-attendance4">Sunday | Farewell Brunch</label>
+											  <br/>
+											  <br/>
+											  <select name="meal4" id="meal4">
+												<option value="" selected disabled hidden>Dinner selection</option>
+												<option value="Beef">Beef</option>
+												<option value="Salmon">Salmon</option>
+												<option value="Vegetarian">Vegetarian</option>
+												<option value="Children's meal">Children's meal</option>
+											  </select>
+											  <input type="checkbox" placeholder="chk" id="Foodrequestchk4" name="Foodrequestchk4"/><label for="Foodrequestchk4">Food request</label> 
+											  <input type="text" name="Foodrequests4" id="Foodrequests4" placeholder="Food requests (allergy, restriction, etc.)">  <br/>
+											  <hr size="2" width="100%">  
+
+											  <input type="text" name="name5" id="full-name5" placeholder="Guest 5 Name">
+											  <br/>
+											  <input type="checkbox" name="friday5" id="friday-attendance5"><label for="friday-attendance5">Friday | Welcome Reception</label>
+											  <input type="checkbox" name="saturday5" id="saturday-attendance5"><label for="saturday-attendance5">Saturday | Wedding</label>
+											  <input type="checkbox" name="sunday5" id="sunday-attendance5"><label for="sunday-attendance5">Sunday | Farewell Brunch</label>
+											  <br/>
+											  <br/>
+											  <select name="meal5" id="meal5">
+												<option value="" selected disabled hidden>Dinner selection</option>
+												<option value="Beef">Beef</option>
+												<option value="Salmon">Salmon</option>
+												<option value="Vegetarian">Vegetarian</option>
+												<option value="Children's meal">Children's meal</option>
+											  </select>
+											  <input type="checkbox" placeholder="chk" id="Foodrequestchk5" name="Foodrequestchk5"/><label for="Foodrequestchk5">Food request</label> 
+											  <input type="text" name="Foodrequests5" id="Foodrequests5" placeholder="Food requests (allergy, restriction, etc.)">  <br/>
+											  <hr size="2" width="100%">  
+
+											  <input type="text" name="name6" id="full-name6" placeholder="Guest 6 Name">
+											  <br/>
+											  <input type="checkbox" name="friday6" id="friday-attendance6"><label for="friday-attendance6">Friday | Welcome Reception</label>
+											  <input type="checkbox" name="saturday6" id="saturday-attendance6"><label for="saturday-attendance6">Saturday | Wedding</label>
+											  <input type="checkbox" name="sunday6" id="sunday-attendance6"><label for="sunday-attendance6">Sunday | Farewell Brunch</label>
+											  <br/>
+											  <br/>
+											  <select name="meal6" id="meal6">
+												<option value="" selected disabled hidden>Dinner selection</option>
+												<option value="Beef">Beef</option>
+												<option value="Salmon">Salmon</option>
+												<option value="Vegetarian">Vegetarian</option>
+												<option value="Children's meal">Children's meal</option>
+											  </select>
+											  <input type="checkbox" placeholder="chk" id="Foodrequestchk6" name="Foodrequestchk6"/><label for="Foodrequestchk6">Food request</label> 
+											  <input type="text" name="Foodrequests6" id="Foodrequests6" placeholder="Food requests (allergy, restriction, etc.)">  <br/>
+											  <hr size="2" width="100%">
+											  <br/>
+
+											  <input type="hidden" name="_subject" id="email-subject" value="RSVP">
+											<!-- </fieldset> -->
+											<input type="hidden" name="redirect" value="https://www.meganandspencer.com">
+
+											<button type="submit">Submit Form</button>
+
+											<!-- <input type="submit" value="RSVP"> -->
+
+										  </form>
 									  </div>
 									</div>
-								  </div>
+								</div>
 								<!-- <p><a href="https://g.page/CaliPaso?share" target="_blank"><span class="icon fa-gifts"></span> <span class="icon fa-less-than"></span> <span class="icon fa-home"></span></a></p> -->
 								
 								<!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfemvDhSLWiWyystJno3YufJRMPAZP0ApZzorXfGN8EPqDRWQ/viewform?embedded=true" width="640" height="1028" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+								<!-- <div class="container">
+									<div class="row">
+										<div class="col-md-4">
+											<div class="form-group label-floating">
+												<label class="control-label">Act</label>
+												<input type="text" class="form-control" v-model="act" >
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="form-group label-floating">
+												<label class="control-label">Section </label>
+												<input type="text" class="form-control" v-model="section">
+											</div>
+										</div>
+										
+									</div>
+									</div>
+									<button id="btn">Add row</button> -->
 							</article>
 
 						<!-- Contact

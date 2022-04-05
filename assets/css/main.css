@@ -73,6 +73,68 @@ input, select, textarea {
 	appearance: none;
 }
 
+#Foodrequests {
+    display:none;
+}
+#Foodrequestchk:checked ~ #Foodrequests {
+    display:block;
+}
+
+#Foodrequests2 {
+    display:none;
+}
+#Foodrequestchk2:checked ~ #Foodrequests2 {
+    display:block;
+}
+
+#Foodrequests3 {
+    display:none;
+}
+#Foodrequestchk3:checked ~ #Foodrequests3 {
+    display:block;
+}
+
+#Foodrequests4 {
+    display:none;
+}
+#Foodrequestchk4:checked ~ #Foodrequests4 {
+    display:block;
+}
+
+#Foodrequests5 {
+    display:none;
+}
+#Foodrequestchk5:checked ~ #Foodrequests5 {
+    display:block;
+}
+
+#Foodrequests6 {
+    display:none;
+}
+#Foodrequestchk6:checked ~ #Foodrequests6 {
+    display:block;
+}
+
+select,
+select option {
+  color: #000000;
+}
+
+select:invalid,
+select option[value=""] {
+  color: #999999;
+}
+
+label {
+  display: block;
+  margin: 16px 0;
+}
+
+/*Added for browser compatibility*/
+[hidden] {
+  display: none;
+}
+
 /* Basic */
 
 	@-ms-viewport {
