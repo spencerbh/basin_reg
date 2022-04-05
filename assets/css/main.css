@@ -1718,18 +1718,18 @@ label {
 	}
 
 		#footer .copyright {
-			letter-spacing: 0.2rem;
-			font-size: 0.6rem;
-			opacity: 0.2;
+			letter-spacing: 0.1rem;
+			font-size: 0.4rem;
+			opacity: 0.1;
 			margin-bottom: 0;
 			text-transform: uppercase;
 		}
 
 		body.is-article-visible #footer {
-			-moz-transform: scale(0.95);
-			-webkit-transform: scale(0.95);
-			-ms-transform: scale(0.95);
-			transform: scale(0.95);
+			-moz-transform: scale(0.5);
+			-webkit-transform: scale(0.5);
+			-ms-transform: scale(0.5);
+			transform: scale(0.5);
 			-moz-filter: blur(0.1rem);
 			-webkit-filter: blur(0.1rem);
 			-ms-filter: blur(0.1rem);
