@@ -1,6 +1,6 @@
 @import url(fontawesome-all.min.css);
 /* @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300italic,600italic,300,600"); */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300&family=Petit+Formal+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap");
 
 /*
 	Dimension by HTML5 UP
@@ -77,6 +77,20 @@ input, select, textarea {
     display:none;
 }
 #Foodrequestchk:checked ~ #Foodrequests {
+    display:block;
+}
+
+#Sellrequests {
+    display:none;
+}
+#Sellrequestchk:checked ~ #Sellrequests {
+    display:block;
+}
+
+#Buyrequests {
+    display:none;
+}
+#Buyrequestchk:checked ~ #Buyrequests {
     display:block;
 }
 
@@ -218,7 +232,7 @@ label {
 	} */
 	body, input, select, textarea {
 		color: #ffffff;
-		font-family: 'Noto Serif Display', serif;
+		font-family: 'Titillium Web', sans-serif;
 		font-weight: 800;
 		font-size: 1rem;
 		line-height: 1.65;
@@ -1216,7 +1230,7 @@ label {
 			-webkit-transition-delay: 0.75s;
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
-			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
+			background-image: linear-gradient(to top, rgba(38, 40, 43, 0.8), rgba(1, 19, 54, 0.8)), url("../../images/overlay.png");
 			background-size: auto,
  256px 256px;
 			background-position: center,
@@ -1235,7 +1249,7 @@ label {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bike.jpg");
+			background-image: url("../../images/waterfall_path.jpg");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
