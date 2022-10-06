@@ -233,7 +233,9 @@
 										<!-- <h1 class="p-5">répondez s'il vous plaît</h1> -->
 										<!-- <img src="images/flower.png" alt="" style="max-width: 30%;"/> -->
 
-										<form id="fs-frm" name="basic-rsvp-form" accept-charset="utf-8" action="https://api.web3forms.com/submit" method="post">
+										<!-- <form id="fs-frm" name="basic-rsvp-form" accept-charset="utf-8" action="https://api.web3forms.com/submit" enctype="multipart/form-data" method="post"> -->
+										<form action="https://api.web3forms.com/submit" enctype="multipart/form-data" method="post">
+
 											<!-- <fieldset id="fs-frm-inputs"> -->
 											<!-- <span class="image main"><img src="images/flower.png" alt="" style="max-width: 50%;"/></span> -->
 											  <!-- <label for="attending">Attending?</label> -->
@@ -244,15 +246,19 @@
 											  <br/>
 											  <br/>
 											  <label for="picture">Upload a picture of your well with the sticker on it</label>
-											  <input type="file" name="picture" accept="image/*" capture="camera" />
+											  <!-- <input type="file" name="attachment"/> -->
+											  <input type="file" name="attachment" />
 											  <br/>
 											  <br/>											  
 											  <label>Click GPS button to upload your well's location</label>
 
-												<button onclick="getLocation()">GPS</button>
+												<!-- <button onclick="getLocation()">GPS</button> -->
 												<input type="button" value="Get Location" onclick="getLocation()" />
-												<input type="text" id="Latitude" name="Latitude" value="">
-												<input type="text" id="Longitude" name="Longitude" value="">
+												<div id="divSample" class="hideClass">
+													<input type="hidden" id="Latitude" name="Latitude" value="">
+													<input type="hidden" id="Longitude" name="Longitude" value="">
+												</div>
+
 
 												<!-- <p id="demo"></p> -->
 
@@ -279,7 +285,7 @@
 
 											  <input type="hidden" name="_subject" id="email-subject" value="New registration">
 											<!-- </fieldset> -->
-											<input type="hidden" name="redirect" value="https://www.meganandspencer.com/#Thanks">
+											<input type="hidden" name="redirect" value="https://www.register.basinlogix.com/#Thanks">
 
 											<button type="submit">Submit Form</button>
 
