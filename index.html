@@ -234,34 +234,30 @@
 										<!-- <img src="images/flower.png" alt="" style="max-width: 30%;"/> -->
 
 										<!-- <form id="fs-frm" name="basic-rsvp-form" accept-charset="utf-8" action="https://api.web3forms.com/submit" enctype="multipart/form-data" method="post"> -->
-										<form action="https://api.web3forms.com/submit" enctype="multipart/form-data" method="post">
+										<!-- <form action="https://api.web3forms.com/submit" enctype="multipart/form-data" method="post"> --> 
+										<!-- <form action="https://api.web3forms.com/submit" enctype="multipart/form-data" method="POST"> -->
+										<form action="https://formsubmit.co/spencerbh@basinlogix.com" enctype="multipart/form-data" method="POST">
 
-											<!-- <fieldset id="fs-frm-inputs"> -->
-											<!-- <span class="image main"><img src="images/flower.png" alt="" style="max-width: 50%;"/></span> -->
-											  <!-- <label for="attending">Attending?</label> -->
+
 											  <input type="hidden" name="access_key" value="3cca5dad-a2ae-4daa-aeed-8ba15bb35bf4">
 
 
 											  <input type="text" name="name" id="full-name" placeholder="Well Name" required="">
 											  <br/>
+											  <input type="hidden" name="ccemail" value="spencerbh@proton.me" />
 											  <br/>
 											  <label for="picture">Upload a picture of your well with the sticker on it</label>
-											  <!-- <input type="file" name="attachment"/> -->
+
 											  <input type="file" name="attachment" />
 											  <br/>
 											  <br/>											  
 											  <label>Click GPS button to upload your well's location</label>
 
-												<!-- <button onclick="getLocation()">GPS</button> -->
 												<input type="button" value="Get Location" onclick="getLocation()" />
 												<div id="divSample" class="hideClass">
 													<input type="hidden" id="Latitude" name="Latitude" value="">
 													<input type="hidden" id="Longitude" name="Longitude" value="">
 												</div>
-
-
-												<!-- <p id="demo"></p> -->
-
 
 
 											  <input type="checkbox" placeholder="chk" id="Sellrequestchk" name="Sellrequestchk"/><label for="Sellrequestchk">Sell groundwater from this well?</label> 
